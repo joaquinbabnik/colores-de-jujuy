@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    color: white; /* este me dice el color de la letra */
+    background-color: red; /* este me dice el color del fondo del parrafo */
+    text-align: center;
+}
+
+h2{
+    color: white;
+    background-color: orange;
+}
+
+span{
+    background-color: yellowgreen;
+}
+
+div{
+    font-size: 16px; /* este me dice el tamaño de la letra */
+}
+
+.titulo-principal{
+    color: rgb(160, 35, 13);
+    background-color: rgb(180, 110, 69);
+    font-size: 48px;
+}
+
+.titulo-lista-nav{/* este es un selector personalizado */
+    color: rgb(160, 35, 13);
+    background-color:rgb(180, 110, 69);
+    padding: 0 0 0 16px;
+    display: inline;
+} 
+.titulo-nav{
+    background-color:rgb(180, 110, 69) ;
+    display: inline;
+    text-decoration: dashed;
+    padding:  0 0 0 10px;
+}
+
+.color-encabezado{
+    background-color: rgb(180, 110, 69);
+}
+
+li{
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+.img-chica{
+    width: 30px;
+    height: 50px;
+}
+
+.img-medium{
+    width: 300px;
+    height: 200px;
+}
+.header-logo{
+    display: inline;
+}
+
+.img-destacada{
+    width: 300px;
+    height: 200px;
+} 
+
+.fotos{
+    background-color: blueviolet;
+    padding-inline: 200px 0; /* arriba derecha abajo izquierda */
+}
+
+
+.creditos-redes-sociales{
+    background-color: rgb(105, 193, 105);
+    padding: 0 0 0 16px;
+}
+

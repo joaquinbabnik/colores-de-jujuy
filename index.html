@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- esta etiqueta identifica el documento como html -->
+<html lang="es "><!-- esta etiqueta determina el lenguaje y empiezan las etiquetas html -->
+<head>
+    <meta charset="UTF-8"><!-- este meta determina que se use el abecedario -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- solo se pone para la gente que usa explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- determina el tamaño de la pantalla -->
+    <!-- fons (LETRA)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="resources/apple-touch-icon.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css"> 
+    <title>Colores de jujuy</title><!-- titulo de la pagina -->
+</head>
+<body> <!-- aca se pone todo el contenido de la pagina -->
+    <header> <!-- aca se pone el encabezado de la barra de navegacion y el codigo -->
+        <section class="color-encabezado">
+            <h1 class="titulo-principal">Colores de Jujuy</h1>
+            <nav>
+                <h2 class="titulo-lista-nav">Diferentes regiones</h2>
+                <ul class="titulo-nav">
+                    <li><a href="#">Pagina Principal</a></li>
+                    <li><a href="pages/quebrada.html">Region Quebrada</a></li>
+                    <li><a href="pages/valles.html">Region Valles</a></li>
+                    <li><a href="pages/yungas.html">Region Yungas</a></li>
+                    <li><a href="pages/puna.html">Region Puna</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main><!-- aca se pone todo el contenido de la pagina que no sea head o footer -->
+        <section class="fotos">
+            <div class="fotos-paisajes">    
+                <img class="img-destacada" src="resources/hornocal.jpg" alt="esto es el hornocal"> <!-- imagen con enlace local -->
+                <img class="img-medium" src="resources/purmamarca.jpg" alt="">
+                <img src="resources/vicuña.jpg" alt="">  
+            </div>
+            <div>   
+                <span>esta es para que solo colores lo escrito </span>
+            </div>  
+        </section>
+    </main>
+    <footer>
+        <section class="creditos-redes-sociales">
+        <h3>creado por joaquin babnik</h3>
+        <a href=""><img class="img-chica" src="resources/whatsapp-brands.svg" alt=""></a>
+        <a href=""><img class="img-chica" src="resources/instagram-brands.svg" alt=""></a>
+        </section>
+        <h2>formularios</h2>
+        <form>
+            <div>
+                <label>nombre</label>
+                <input >
+            </div>
+            <div>
+                <label>email</label>
+                <input >
+            </div>
+            <div>
+                <label>deja tu comentario</label>
+                <textarea name="" id="" cols="10" rows="1"></textarea>
+            </div>
+            <input type="submit" value="email del usuario">
+            <input type="reset">
+            <div>
+                <select name="region" id="">
+                    <option value="quebrada">quebrada</option>
+                    <option value="puna">puna</option>     
+                    <option value="valles">valles</option>
+                    <option value="yungas">yungas</option>
+                </select>
+            <input type="checkbox">
+            <label for="">acepto terminos y condiciones</label>
+            </div>
+        </form> 
+    </footer> 
+</body>
+</html>
