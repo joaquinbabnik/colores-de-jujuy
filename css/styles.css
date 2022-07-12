@@ -1,21 +1,12 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 h1{
     color: white; /* este me dice el color de la letra */
-    background-color: red; /* este me dice el color del fondo del parrafo */
     text-align: center;
-}
-
-h2{
-    color: white;
-    background-color: orange;
-}
-
-span{
-    background-color: yellowgreen;
 }
 
 div{
@@ -24,33 +15,30 @@ div{
 
 .titulo-principal{
     color: rgb(160, 35, 13);
-    background-color: rgb(180, 110, 69);
     font-size: 48px;
 }
 
 .titulo-lista-nav{/* este es un selector personalizado */
     color: rgb(160, 35, 13);
-    background-color:rgb(180, 110, 69);
     padding: 0 0 0 16px;
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
 } 
 .titulo-nav{
-    background-color:rgb(180, 110, 69) ;
-    display: inline;
+    display: flex;
     text-decoration: dashed;
-    padding:  0 0 0 10px;
+    flex-wrap: wrap;
 }
 
 .color-encabezado{
-    background-color: rgb(180, 110, 69);
+    background-color: rgb(156, 86, 75);
 }
 
 li{
-    display: inline;
+    display: flex;
     padding: 10px;
     font-size: 20px;
 }
-
 
 .img-chica{
     width: 30px;
@@ -62,7 +50,7 @@ li{
     height: 200px;
 }
 .header-logo{
-    display: inline;
+    display: flex;
 }
 
 .img-destacada{
@@ -70,14 +58,63 @@ li{
     height: 200px;
 } 
 
-.fotos{
-    background-color: blueviolet;
-    padding-inline: 200px 0; /* arriba derecha abajo izquierda */
+.fondo-main{
+    background-image: url(../resources/purmamarca.jpg);
+    background-size: 100%;
+    
 }
 
-
+.fondo-quebrada{
+    background-image: url(../resources/purmamarca.jpg);
+    background-size: 100%;
+}
+.fotos{
+    padding-inline: 200px 0; /* arriba derecha abajo izquierda */
+}
 .creditos-redes-sociales{
     background-color: rgb(105, 193, 105);
     padding: 0 0 0 16px;
 }
 
+.header-nav{
+    display: flex;
+}
+
+.lista-footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(105, 193, 105);
+}
+
+.titulo-footer{
+    background-color: rgb(105, 193, 105);
+}
+.titulo-main-paginas{
+    text-align: center;
+
+}
+.nav-paginas{
+    margin: 0px 0px 0px 400px;
+    text-align: center;
+    display: flex;
+}
+
+.imagenes-grids{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;/* fr: esta unidad de medida se aprica solamente en grids */
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"lagunas caspala "
+                        "lagunas calilegua"; 
+}
+
+.lagunas{
+    grid-area: lagunas;
+}
+
+.caspala{
+    grid-area: caspala;
+}
+
+.calilegua{
+    grid-area: calilegua;
+}

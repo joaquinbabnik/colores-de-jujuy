@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="css/styles.css"> 
     <title>Colores de jujuy</title><!-- titulo de la pagina -->
 </head>
-<body> <!-- aca se pone todo el contenido de la pagina -->
-    <header> <!-- aca se pone el encabezado de la barra de navegacion y el codigo -->
+<body  class="fondo-main"> <!-- aca se pone todo el contenido de la pagina -->
+    <header class="imagen-encabezado"> <!-- aca se pone el encabezado de la barra de navegacion y el codigo -->
         <section class="color-encabezado">
             <h1 class="titulo-principal">Colores de Jujuy</h1>
-            <nav>
+            <nav class="header-nav">
                 <h2 class="titulo-lista-nav">Diferentes regiones</h2>
                 <ul class="titulo-nav">
                     <li><a href="#">Pagina Principal</a></li>
@@ -32,14 +32,17 @@
     </header>
     <main><!-- aca se pone todo el contenido de la pagina que no sea head o footer -->
         <section class="fotos">
-            <div class="fotos-paisajes">    
-                <img class="img-destacada" src="resources/hornocal.jpg" alt="esto es el hornocal"> <!-- imagen con enlace local -->
-                <img class="img-medium" src="resources/purmamarca.jpg" alt="">
-                <img src="resources/vicuña.jpg" alt="">  
-            </div>
-            <div>   
-                <span>esta es para que solo colores lo escrito </span>
-            </div>  
+            <img src="resources/hornocal.jpg" alt="esto es el hornocal"> <!-- imagen con enlace local -->
+            <img src="resources/vicuña.jpg" alt="">  
+            <section class="imagenes-grids">
+            <img class="caspala" src="resources/caspala.jpg" alt="">
+            <img class="img-medium lagunas" src="resources/laguna.jpg" alt="">
+            <img class="calilegua" src="resources/calilegua.jpg" alt="">   
+            </section>
+        </section>
+        <section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YPJwPRTGmyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d69250.53906507004!2d-65.28161405121065!3d-24.18810107376286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1657635265437!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
     <footer>
@@ -48,8 +51,8 @@
         <a href=""><img class="img-chica" src="resources/whatsapp-brands.svg" alt=""></a>
         <a href=""><img class="img-chica" src="resources/instagram-brands.svg" alt=""></a>
         </section>
-        <h2>formularios</h2>
-        <form>
+        <h2 class="titulo-footer">formularios</h2>
+        <form class="lista-footer">
             <div>
                 <label>nombre</label>
                 <input >
